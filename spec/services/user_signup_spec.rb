@@ -77,7 +77,7 @@ describe UserSignup do
         UserSignup.new(User.new(email: "rick@gmail.com")).sign_up('1231241',nil)
       end
 
-      it "Smithsn't send out email with invalid inputs" do
+      it "doesn't send out email with invalid inputs" do
         UserSignup.new(User.new(email: "rick@gmail.com")).sign_up('1231241',nil)
         expect(ActionMailer::Base.deliveries).to be_empty
       end
