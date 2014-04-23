@@ -16,6 +16,13 @@ describe SessionsController do
 
   describe "POST create" do
     context "with valid credentials" do
+
+      it "Authenticates user with an uppercase or lowercase email at sign-in" do
+        alice = Fabricate(:user, email: "Alice@example.com")
+        post :create, email: "alice@example.com", password: alice.password
+        expect(session[:user_id]).to eq(alice.id)
+      end
+
       before do
         alice = Fabricate(:user)
         post :create, email: alice.email, password: alice.password
