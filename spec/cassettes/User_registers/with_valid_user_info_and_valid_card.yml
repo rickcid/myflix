@@ -5,7 +5,7 @@ http_interactions:
     uri: https://api.stripe.com/v1/customers
     body:
       encoding: US-ASCII
-      string: card=tok_103uOe2aBm1z1KoTdwxmqBP7&plan=base&email=john%40example.com
+      string: card=tok_103uP02aBm1z1KoTKS1IVQB3&plan=base&email=john%40example.com
     headers:
       Accept:
       - "*/*; q=0.5, application/xml"
@@ -31,7 +31,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Wed, 23 Apr 2014 23:32:23 GMT
+      - Wed, 23 Apr 2014 23:55:10 GMT
       Content-Type:
       - application/json;charset=utf-8
       Content-Length:
@@ -51,8 +51,8 @@ http_interactions:
       string: |
         {
           "object": "customer",
-          "created": 1398295942,
-          "id": "cus_3uOecfDdPIEhDl",
+          "created": 1398297309,
+          "id": "cus_3uP0XZ6Mf9Bvuu",
           "livemode": false,
           "description": null,
           "email": "john@example.com",
@@ -62,10 +62,10 @@ http_interactions:
             "object": "list",
             "total_count": 1,
             "has_more": false,
-            "url": "/v1/customers/cus_3uOecfDdPIEhDl/subscriptions",
+            "url": "/v1/customers/cus_3uP0XZ6Mf9Bvuu/subscriptions",
             "data": [
               {
-                "id": "sub_3uOeHWle4D3OLU",
+                "id": "sub_3uP01Gj3ZBWdbZ",
                 "plan": {
                   "interval": "month",
                   "name": "The Base Plan",
@@ -81,12 +81,12 @@ http_interactions:
                   "statement_description": "MyFlix Monthly"
                 },
                 "object": "subscription",
-                "start": 1398295943,
+                "start": 1398297309,
                 "status": "active",
-                "customer": "cus_3uOecfDdPIEhDl",
+                "customer": "cus_3uP0XZ6Mf9Bvuu",
                 "cancel_at_period_end": false,
-                "current_period_start": 1398295943,
-                "current_period_end": 1400887943,
+                "current_period_start": 1398297309,
+                "current_period_end": 1400889309,
                 "ended_at": null,
                 "trial_start": null,
                 "trial_end": null,
@@ -104,17 +104,17 @@ http_interactions:
             "object": "list",
             "total_count": 1,
             "has_more": false,
-            "url": "/v1/customers/cus_3uOecfDdPIEhDl/cards",
+            "url": "/v1/customers/cus_3uP0XZ6Mf9Bvuu/cards",
             "data": [
               {
-                "id": "card_103uOe2aBm1z1KoTcsIbCLIV",
+                "id": "card_103uP02aBm1z1KoTmXKz30mQ",
                 "object": "card",
                 "last4": "4242",
                 "type": "Visa",
                 "exp_month": 4,
                 "exp_year": 2015,
                 "fingerprint": "jxt5UvtpyqyJjD9H",
-                "customer": "cus_3uOecfDdPIEhDl",
+                "customer": "cus_3uP0XZ6Mf9Bvuu",
                 "country": "US",
                 "name": null,
                 "address_line1": null,
@@ -129,8 +129,8 @@ http_interactions:
               }
             ]
           },
-          "default_card": "card_103uOe2aBm1z1KoTcsIbCLIV"
+          "default_card": "card_103uP02aBm1z1KoTmXKz30mQ"
         }
     http_version: 
-  recorded_at: Wed, 23 Apr 2014 23:32:23 GMT
+  recorded_at: Wed, 23 Apr 2014 23:55:10 GMT
 recorded_with: VCR 2.9.0

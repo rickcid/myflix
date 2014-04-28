@@ -31,33 +31,33 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Wed, 23 Apr 2014 23:31:55 GMT
+      - Wed, 23 Apr 2014 23:55:24 GMT
       Content-Type:
       - application/json;charset=utf-8
       Content-Length:
       - '570'
-      Access-Control-Allow-Methods:
-      - GET, POST, HEAD, OPTIONS, DELETE
-      Access-Control-Max-Age:
-      - '300'
-      Access-Control-Allow-Credentials:
-      - 'true'
       Cache-Control:
       - no-cache, no-store
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Max-Age:
+      - '300'
+      Access-Control-Allow-Methods:
+      - GET, POST, HEAD, OPTIONS, DELETE
       Strict-Transport-Security:
       - max-age=31556926; includeSubDomains
     body:
       encoding: UTF-8
       string: |
         {
-          "id": "tok_103uOd2aBm1z1KoTIxsptR51",
+          "id": "tok_103uP12aBm1z1KoTxAwr1QIl",
           "livemode": false,
-          "created": 1398295915,
+          "created": 1398297324,
           "used": false,
           "object": "token",
           "type": "card",
           "card": {
-            "id": "card_103uOd2aBm1z1KoTqOnhs6wD",
+            "id": "card_103uP12aBm1z1KoTY40CjkpS",
             "object": "card",
             "last4": "4242",
             "type": "Visa",
@@ -76,13 +76,13 @@ http_interactions:
           }
         }
     http_version: 
-  recorded_at: Wed, 23 Apr 2014 23:31:55 GMT
+  recorded_at: Wed, 23 Apr 2014 23:55:24 GMT
 - request:
     method: post
     uri: https://api.stripe.com/v1/customers
     body:
       encoding: US-ASCII
-      string: card=tok_103uOd2aBm1z1KoTIxsptR51&plan=base&email=rachelle%40huel.org
+      string: card=tok_103uP12aBm1z1KoTxAwr1QIl&plan=base&email=asia%40parker.net
     headers:
       Accept:
       - "*/*; q=0.5, application/xml"
@@ -99,7 +99,7 @@ http_interactions:
         Ricks-MacBook-Air.local 13.1.0 Darwin Kernel Version 13.1.0: Thu Jan 16 19:40:37
         PST 2014; root:xnu-2422.90.20~2/RELEASE_X86_64 x86_64"}'
       Content-Length:
-      - '69'
+      - '67'
   response:
     status:
       code: 200
@@ -108,19 +108,19 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Wed, 23 Apr 2014 23:31:55 GMT
+      - Wed, 23 Apr 2014 23:55:25 GMT
       Content-Type:
       - application/json;charset=utf-8
       Content-Length:
-      - '2171'
+      - '2169'
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Max-Age:
+      - '300'
       Cache-Control:
       - no-cache, no-store
       Access-Control-Allow-Methods:
       - GET, POST, HEAD, OPTIONS, DELETE
-      Access-Control-Max-Age:
-      - '300'
-      Access-Control-Allow-Credentials:
-      - 'true'
       Strict-Transport-Security:
       - max-age=31556926; includeSubDomains
     body:
@@ -128,21 +128,21 @@ http_interactions:
       string: |
         {
           "object": "customer",
-          "created": 1398295915,
-          "id": "cus_3uOdBY6VgHTusu",
+          "created": 1398297325,
+          "id": "cus_3uP1XXRG9WhpV4",
           "livemode": false,
           "description": null,
-          "email": "rachelle@huel.org",
+          "email": "asia@parker.net",
           "delinquent": false,
           "metadata": {},
           "subscriptions": {
             "object": "list",
             "total_count": 1,
             "has_more": false,
-            "url": "/v1/customers/cus_3uOdBY6VgHTusu/subscriptions",
+            "url": "/v1/customers/cus_3uP1XXRG9WhpV4/subscriptions",
             "data": [
               {
-                "id": "sub_3uOdB8swFXrYI0",
+                "id": "sub_3uP1JDmqIyTbfi",
                 "plan": {
                   "interval": "month",
                   "name": "The Base Plan",
@@ -158,12 +158,12 @@ http_interactions:
                   "statement_description": "MyFlix Monthly"
                 },
                 "object": "subscription",
-                "start": 1398295915,
+                "start": 1398297325,
                 "status": "active",
-                "customer": "cus_3uOdBY6VgHTusu",
+                "customer": "cus_3uP1XXRG9WhpV4",
                 "cancel_at_period_end": false,
-                "current_period_start": 1398295915,
-                "current_period_end": 1400887915,
+                "current_period_start": 1398297325,
+                "current_period_end": 1400889325,
                 "ended_at": null,
                 "trial_start": null,
                 "trial_end": null,
@@ -181,17 +181,17 @@ http_interactions:
             "object": "list",
             "total_count": 1,
             "has_more": false,
-            "url": "/v1/customers/cus_3uOdBY6VgHTusu/cards",
+            "url": "/v1/customers/cus_3uP1XXRG9WhpV4/cards",
             "data": [
               {
-                "id": "card_103uOd2aBm1z1KoTqOnhs6wD",
+                "id": "card_103uP12aBm1z1KoTY40CjkpS",
                 "object": "card",
                 "last4": "4242",
                 "type": "Visa",
                 "exp_month": 4,
                 "exp_year": 2018,
                 "fingerprint": "jxt5UvtpyqyJjD9H",
-                "customer": "cus_3uOdBY6VgHTusu",
+                "customer": "cus_3uP1XXRG9WhpV4",
                 "country": "US",
                 "name": null,
                 "address_line1": null,
@@ -206,8 +206,8 @@ http_interactions:
               }
             ]
           },
-          "default_card": "card_103uOd2aBm1z1KoTqOnhs6wD"
+          "default_card": "card_103uP12aBm1z1KoTY40CjkpS"
         }
     http_version: 
-  recorded_at: Wed, 23 Apr 2014 23:31:56 GMT
+  recorded_at: Wed, 23 Apr 2014 23:55:25 GMT
 recorded_with: VCR 2.9.0
